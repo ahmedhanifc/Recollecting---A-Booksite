@@ -1,0 +1,8 @@
+/* Ahmed Hanif; Creation Date: 22/10/2023 */
+
+nav.horizontalNavigation ul li{
+    list-style: none;
+}
+nav.horizontalNavigation ul li a{
+    text-decoration: none;
+}

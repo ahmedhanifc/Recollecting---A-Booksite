@@ -1,0 +1,2 @@
+22/10/2023 - Sunday - The Beginning of the my Fall 2023 Web Project. Excited to see where this goes.
+    Changes Made: Created Folders, and Started working on basic structuring the header and styling it.
