@@ -7,17 +7,30 @@
     <title>Recollecting: A Book Site</title>
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/fonts.css">
+    <link rel="stylesheet" href="../css/layout.css">
 </head>
 <body>
     <header>
         <div>
-            <p>Recollecting</p>
+            <p><span>Book </span>Recollection</p>
             <form action="">
                 <label for="search"></label>
-                <input type="search" id = "search" name = "search" placeholder="search">
+
+                <!-- Unicode Source: https://stackoverflow.com/questions/12036038/is-there-unicode-glyph-symbol-to-represent-search -->
+                <input type="search" id = "search" name = "search" placeholder=" &#x1F50E;&#xFE0E; &nbsp; &nbsp; Search for Books... ">
+                <!-- ----------------------------------------------------------------------------------------------------------------->
+
             </form>
+            <div class="header-icons">
+                <ul>
+                    <li><a href=""><img src="../image/svg/heart.svg" alt=""></a></li>
+                    <li><a href=""><img src="../image/svg/shopping_cart.svg" alt=""></a></li>
+                </ul>
+            </div>
+
         </div>
-        <nav class="horizontalNavigation">
+        <nav class="horizontal-navigation">
             <ul>
                 <li><a href="">Home</a></li>
                 <li><a href="">Products</a></li>
@@ -25,18 +38,30 @@
                 <li><a href="">Subscribe</a></li>
             </ul>
         </nav>
-    </header>
-    <div class="showcase-container">
-        <div id="showcase-container-left-column">
-            <div>Trending Books</div>
-            <div>Delve into new and unforseen worlds from different authors</div>
-        </div>
-        <div id="showcase-container-right-column">
-            <div class="book-showcase">
-                <img src="../image/aManCalledOve.jp" alt="A man Called Ove">
+        <div class="showcase-container">
+            <div class="showcase-container-left-column">
+                <div class="showcase-container-heading">What's Trending?</div>
+                <div class = "showcase-container-description">Delve into new and unforseen worlds. Take a look at what's trending, both in the realm of books and audiobooks</div>
             </div>
-            <div class="author-showcase"></div>
+            <div class="showcase-container-right-column">
+                <div class="showcase-container-book">
+                    <img src="../image/aManCalledOve.jpg" alt="A man Called Ove">
+                </div>
+                <div class="showcase-container-author">
+                    <!-- <p>Author of The Week</p> -->
+                    <img src="../image/author_manCalledOve_edited.png" alt="Author : A man Called Ove">
+                </div>
+                <div class="showcase-container-audiobook">
+                    <img src="../image/extras/audio_slider.png" alt="">
+                </div>
+            </div>
         </div>
-    </div>
+    </header>
+    <main>
+        <div class="main-left-column">
+            
+        </div>
+        <div class="main-right-column"></div>
+    </main>
 </body>
 </html>

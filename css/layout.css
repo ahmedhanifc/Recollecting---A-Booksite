@@ -1,0 +1,55 @@
+html{
+    min-width: 800px;
+    max-width: 1300px;
+}
+
+/* Header Layout */
+
+header > div{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    padding-top:20px;
+    margin-left:20px;
+    margin-right:20px;
+}
+
+.header-icons{
+    justify-self: right;
+}
+
+.header-icons ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:10px;
+}
+
+form input{
+
+    width: 100%;
+}
+
+/* Decreasing the width so that all the list items are pushed together */
+header .horizontal-navigation{ 
+    width: 70%;
+    margin:auto;
+    margin-top:20px;
+}
+/* --------------------------------------------------------------------- */
+
+header .horizontal-navigation ul{
+
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-items: center;
+}
+
+/* Showcase Container */
+.showcase-container{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap:50px;
+}
+
+
+/* ------------------------------------------------------------------ */
