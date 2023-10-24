@@ -60,6 +60,9 @@ main{
 }
 
 .main-right-column{
+    /* Increasing the width of the main-right-column greatly reduces the quality of the image. */
+    width: 90%;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(4,1fr);
     gap:20px;
