@@ -24,7 +24,7 @@ header > div{
     gap:10px;
 }
 
-form input{
+header form input{
 
     width: 100%;
 }
@@ -53,3 +53,23 @@ header .horizontal-navigation ul{
 
 
 /* ------------------------------------------------------------------ */
+
+main{
+    display:grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.main-right-column{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:20px;
+}
+
+.main-book-price ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: stretch;
+}
+
+
+
