@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+        <!-- Ahmed Hanif ; Creation Date: 29/10/2023 ; Project -->
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/fonts.css">
+    <link rel="stylesheet" href="../css/layout.css">
+  </head>
+  <body>
+    <header>
+      <div>
+          <p><span>Book </span>Recollection</p>
+          <form action="">
+              <label for="search"></label>
+
+              <!-- Unicode Source: https://stackoverflow.com/questions/12036038/is-there-unicode-glyph-symbol-to-represent-search -->
+              <input type="search" id = "search" name = "search" placeholder=" &#x1F50E;&#xFE0E; &nbsp; &nbsp; Search for Books... ">
+              <!-- ----------------------------------------------------------------------------------------------------------------->
+
+          </form>
+          <div class="header-icons">
+              <ul>
+                  <li><a href=""><img src="../image/svg/heart.svg" alt=""></a></li>
+                  <li><a href=""><img src="../image/svg/shopping_cart.svg" alt=""></a></li>
+              </ul>
+          </div>
+
+      </div>
+      <nav class="horizontal-navigation">
+          <ul>
+              <li><a href="../html/index.html">Home</a></li>
+              <li><a href="../html/products.html">Products</a></li>
+              <li><a href="../html/contact_us.html">Contact Us</a></li>
+              <li><a href="../html/subscribe.html">Subscribe</a></li>
+          </ul>
+      </nav>
+  </header>
+    <main class = "products">
+      <div class="main-left-column">
+          <div class="main-section categories">
+              <form action="" method = "post">
+                  <fieldset>
+                      <legend>Categories</legend>
+                      <ul>
+                          <li>
+                              <input type="checkbox" name="fiction-category" id="fiction">
+                              <label for="fiction">Fiction</label>
+                          </li>
+                          <li>
+                              <input type="checkbox" name="non-fiction-category" id="non-fiction">
+                              <label for="non-fiction">Non-Fiction</label>
+                          </li>
+                      </ul>
+                  </fieldset>
+              </form>
+          </div>
+          <div class="main-section language">
+              <form action="" method = "post">
+                  <fieldset>
+                      <legend>Language</legend>
+                      <ul>
+                          <li>
+                              <input type="checkbox" name = "english-language" id = "english-language">
+                              <label for="langauge">English</label>
+                          </li>
+                          <li>
+                              <input type="checkbox" name = "arabic-language" id = "arabic-language">
+                              <label for="langauge">Arabic</label>
+                          </li>
+                          <li>
+                              <input type="checkbox" name = "russian-language" id = "russian-language">
+                              <label for="langauge">Russian</label>
+                          </li>
+                      </ul>
+                  </fieldset>
+              </form>
+          </div>
+          <div class="main-section format">
+              <form action="" method = "post">
+                  <fieldset>
+                      <legend>Format</legend>
+                      <ul>
+                          <li>
+                              <input type="checkbox" name="epub" id="epub">
+                              <label for="epub">EPUB</label>
+                          </li>
+                          <li>
+                              <input type="checkbox" name="mobi" id="mobi">
+                              <label for="epub">MOBI</label>
+                          </li>
+                          <li>
+                              <input type="checkbox" name="pdf" id="pdf">
+                              <label for="epub">PDF</label>
+                          </li>
+                      </ul>
+                  </fieldset>
+              </form>
+          </div>
+      </div>
+      <div class="main-right-column">
+          <div class = "main-container">
+              <div class="main-image-container">
+                  <img src="../image/book_covers/andTheMountainsEchoed.jpg" alt="book cover">
+              </div>
+              <div class="main-ratings-container">
+                  <!-- source: https://www.w3schools.com/charsets/tryit.asp?deci=9733 -->
+                  &#9733; &#9733; &#9733; &#9733; &#9733; 
+              </div>
+              <div class="main-book-title">[Book Title]</div>
+              <div class="main-book-author">[Author Name]</div>
+              <div class="main-book-price">
+                  <ul>
+                      <li>[Price]</li>
+                      <li><button>Buy Now</button></li>
+                  </ul>
+              </div>
+          </div>
+          <div class = "main-container">
+              <div class="main-image-container">
+                  <img src="../image/book_covers/aThousandSplendidSuns.jpg" alt="book cover">
+              </div>
+              <div class="main-ratings-container">
+                  <!-- source: https://www.w3schools.com/charsets/tryit.asp?deci=9733 -->
+                  &#9733; &#9733; &#9733; &#9733; &#9733; 
+              </div>
+              <div class="main-book-title">[Book Title]</div>
+              <div class="main-book-author">[Author Name]</div>
+              <div class="main-book-price">
+                  <ul>
+                      <li>[Price]</li>
+                      <li><button>Buy Now</button></li>
+                  </ul>
+              </div>
+          </div>
+          <div class = "main-container">
+              <div class="main-image-container">
+                  <img src="../image/book_covers/notesFromTheUnderground.jpg" alt="book cover">
+              </div>
+              <div class="main-ratings-container">
+                  <!-- source: https://www.w3schools.com/charsets/tryit.asp?deci=9733 -->
+                  &#9733; &#9733; &#9733; &#9733; &#9733; 
+              </div>
+              <div class="main-book-title">[Book Title]</div>
+              <div class="main-book-author">[Author Name]</div>
+              <div class="main-book-price">
+                  <ul>
+                      <li>[Price]</li>
+                      <li><button>Buy Now</button></li>
+                  </ul>
+              </div>
+          </div>
+          <div class = "main-container">
+              <div class="main-image-container">
+                  <img src="../image/book_covers/ofMiceAndMen.jpg" alt="book cover">
+              </div>
+              <div class="main-ratings-container">
+                  <!-- source: https://www.w3schools.com/charsets/tryit.asp?deci=9733 -->
+                  &#9733; &#9733; &#9733; &#9733; &#9733; 
+              </div>
+              <div class="main-book-title">[Book Title]</div>
+              <div class="main-book-author">[Author Name]</div>
+              <div class="main-book-price">
+                  <ul>
+                      <li>[Price]</li>
+                      <li><button>Buy Now</button></li>
+                  </ul>
+              </div>
+          </div>
+          <div class = "main-container">
+              <div class="main-image-container">
+                  <img src="../image/book_covers/projectHailMary.jpg" alt="book cover">
+              </div>
+              <div class="main-ratings-container">
+                  <!-- source: https://www.w3schools.com/charsets/tryit.asp?deci=9733 -->
+                  &#9733; &#9733; &#9733; &#9733; &#9733; 
+              </div>
+              <div class="main-book-title">[Book Title]</div>
+              <div class="main-book-author">[Author Name]</div>
+              <div class="main-book-price">
+                  <ul>
+                      <li>[Price]</li>
+                      <li><button>Buy Now</button></li>
+                  </ul>
+              </div>
+          </div>
+          <div class = "main-container">
+              <div class="main-image-container">
+                  <img src="../image/book_covers/hungerGames.jpg" alt="book cover">
+              </div>
+              <div class="main-ratings-container">
+                  <!-- source: https://www.w3schools.com/charsets/tryit.asp?deci=9733 -->
+                  &#9733; &#9733; &#9733; &#9733; &#9733; 
+              </div>
+              <div class="main-book-title">[Book Title]</div>
+              <div class="main-book-author">[Author Name]</div>
+              <div class="main-book-price">
+                  <ul>
+                      <li>[Price]</li>
+                      <li><button>Buy Now</button></li>
+                  </ul>
+              </div>
+          </div>
+          <div class = "main-container">
+              <div class="main-image-container">
+                  <img src="../image/book_covers/aManCalledOve.jpg" alt="book cover">
+              </div>
+              <div class="main-ratings-container">
+                  <!-- source: https://www.w3schools.com/charsets/tryit.asp?deci=9733 -->
+                  &#9733; &#9733; &#9733; &#9733; &#9733; 
+              </div>
+              <div class="main-book-title">[Book Title]</div>
+              <div class="main-book-author">[Author Name]</div>
+              <div class="main-book-price">
+                  <ul>
+                      <li>[Price]</li>
+                      <li><button>Buy Now</button></li>
+                  </ul>
+              </div>
+          </div>
+          <div class = "main-container">
+              <div class="main-image-container">
+                  <img src="../image/book_covers/letterToAYoungMuslim.jpg" alt="book cover">
+              </div>
+              <div class="main-ratings-container">
+                  <!-- source: https://www.w3schools.com/charsets/tryit.asp?deci=9733 -->
+                  &#9733; &#9733; &#9733; &#9733; &#9733; 
+              </div>
+              <div class="main-book-title">[Book Title]</div>
+              <div class="main-book-author">[Author Name]</div>
+              <div class="main-book-price">
+                  <ul>
+                      <li>[Price]</li>
+                      <li><button>Buy Now</button></li>
+                  </ul>
+              </div>
+          </div>
+          <div class = "main-container">
+              <div class="main-image-container">
+                  <img src="../image/book_covers/atomicHabits.jpg" alt="book cover">
+              </div>
+              <div class="main-ratings-container">
+                  <!-- source: https://www.w3schools.com/charsets/tryit.asp?deci=9733 -->
+                  &#9733; &#9733; &#9733; &#9733; &#9733; 
+              </div>
+              <div class="main-book-title">[Book Title]</div>
+              <div class="main-book-author">[Author Name]</div>
+              <div class="main-book-price">
+                  <ul>
+                      <li>[Price]</li>
+                      <li><button>Buy Now</button></li>
+                  </ul>
+              </div>
+          </div>
+          </div>
+      </div>
+  </main>
+  </body>
+</html>

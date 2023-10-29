@@ -1,78 +1,111 @@
-html{
-    min-width: 800px;
-    max-width: 1300px;
+html {
+  min-width: 800px;
+  max-width: 1300px;
+  /* width: 80%; */
+  margin: 0 auto;
+  background-color: #f8f3ed;
 }
 
 /* Header Layout */
 
-header > div{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    align-items: center;
-    padding-top:20px;
-    margin-left:20px;
-    margin-right:20px;
+header > div {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  padding-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
-.header-icons{
-    justify-self: right;
+.header-icons {
+  justify-self: right;
 }
 
-.header-icons ul{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap:10px;
+.header-icons ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
 }
 
-header form input{
-
-    width: 100%;
+header form input {
+  width: 100%;
 }
 
 /* Decreasing the width so that all the list items are pushed together */
-header .horizontal-navigation{ 
-    width: 70%;
-    margin:auto;
-    margin-top:20px;
+header .horizontal-navigation {
+  width: 70%;
+  margin: auto;
+  margin-top: 20px;
+  padding-bottom: 50px;
 }
 /* --------------------------------------------------------------------- */
 
-header .horizontal-navigation ul{
-
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    justify-items: center;
+header .horizontal-navigation ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
 }
 
 /* Showcase Container */
-.showcase-container{
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap:50px;
+.showcase-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 50px;
 }
-
 
 /* ------------------------------------------------------------------ */
 
-main{
-    display:grid;
-    grid-template-columns: 1fr 3fr;
+main {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
 }
 
-.main-right-column{
-    /* Increasing the width of the main-right-column greatly reduces the quality of the image. */
-    width: 90%;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    gap:20px;
+.main-right-column {
+  /* Increasing the width of the main-right-column greatly reduces the quality of the image. */
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
 }
 
-.main-book-price ul{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: stretch;
+.main-book-price ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: stretch;
 }
 
+/* call to action*/
+.call-to-action-container {
+  background: url(../image/background/background_footer_editedWithGradient.png);
+}
+.call-to-action-columns {
+  width: 70%;
+  gap: 20px;
+  margin: 0 auto;
+  padding: 50px 0px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
 
+/* Customer Review */
 
+.customer-review-columns {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+
+.customer-review-right-column {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+/* Products Container Index.html */
+
+.products-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}

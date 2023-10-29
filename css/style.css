@@ -1,126 +1,238 @@
 /* Ahmed Hanif; Creation Date: 22/10/2023 */
 
-
-
-header{
-    background-color: #f8f3ed;
+header,
+.customer-review-container,
+.product-showcase-container {
+  background-color: #ead3b7;
 }
 
-header div{
-    padding:10px;
+header {
 }
 
-header div > p{
-    font-family: 'Roboto', sans-serif; 
-    font-size: 1.4rem;
+header div {
+  padding: 10px;
 }
 
-header div > p span{
-    font-weight: 600;
+header div > p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4rem;
 }
 
-header form input{
-    background-color: rgb(244 244 244);
-    outline:3px solid gainsboro;
-    border-radius: 10px;
+header div > p span {
+  font-weight: 600;
 }
 
-header form input[placeholder]{
-    padding: 10px 5px;
+header form input {
+  background-color: rgb(244 244 244);
+  outline: 3px solid gainsboro;
+  border-radius: 10px;
+}
+
+header form input[placeholder] {
+  padding: 10px 5px;
 }
 
 /* Showcase Container */
-.showcase-container-heading{
-    font-size:3.5rem;
+.showcase-container-heading {
+  font-size: 3.5rem;
 }
-.showcase-container-description{
-    font-size: 0.8rem;
-    color:#5d5d5d;
-}
-
-.showcase-container-right-column{
-    width: 100%;
+.showcase-container-description {
+  font-size: 0.8rem;
 }
 
-.showcase-container-book{
-    width: 33%;
-    float: left;
+.showcase-container-right-column {
+  width: 100%;
 }
-.showcase-container-book img{
-    width: 100%;
-    height: auto;
 
-    box-shadow: 0px 5px 15px rgb(0,0,0,0.6);     /* /* |<length> | <length> | <length> | color*/ 
+.showcase-container-book {
+  width: 33%;
+  float: left;
+}
+.showcase-container-book img {
+  width: 100%;
+  height: auto;
+
+  box-shadow: 0px 5px 15px rgb(0, 0, 0, 0.6); /* /* |<length> | <length> | <length> | color*/
 }
 
 .showcase-container-author,
-.showcase-container-audiobook{
-    width:25%;
-    float:left;
-    vertical-align: center;
-    margin-top: 20px;
-    margin-left:30px;
-
-
+.showcase-container-audiobook {
+  width: 25%;
+  float: left;
+  vertical-align: center;
+  margin-top: 20px;
+  margin-left: 30px;
 }
 .showcase-container-author img,
-.showcase-container-audiobook img{
-    width: 100%;
-    box-shadow: 10px 15px 25px 2px rgb(0,0,0,0.6); 
-    border-radius: 16px;
+.showcase-container-audiobook img {
+  width: 100%;
+  box-shadow: 10px 15px 25px 2px rgb(0, 0, 0, 0.6);
+  border-radius: 16px;
 }
 
-.showcase-container-author > p{
-    font-size: 0.8rem;
-    margin-bottom:15px;
-    text-align: center;
+.showcase-container-author > p {
+  font-size: 0.8rem;
+  margin-bottom: 15px;
+  text-align: center;
 }
 
-fieldset{
-    border:0px;
+fieldset {
+  border: 0px;
 }
 
-main{
-    width:90%;
-    margin:0 auto;
-    margin-top:20px;
+main {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 20px;
 }
 
-.main-section{
-    border:1px solid hsl(0deg 0% 95.69%);;
-    border-radius: 10px ;
-    height:200px;
-    background-color: hsl(0deg 0% 95.69%);
-    margin-bottom: 10px;
+.main-section {
+  border: 1px solid hsl(0deg 0% 95.69%);
+  border-radius: 10px;
+  height: 200px;
+  background-color: hsl(0deg 0% 95.69%);
+  margin-bottom: 10px;
 }
-.main-section form{
-    padding:15px;
-}
-
-.main-section form ul{
-    margin-top:20px;
-}
-.main-section form ul li{
-    margin-top:10px;
+.main-section form {
+  padding: 15px;
 }
 
-
-.main-container > *{
-    padding-top: 10px;
+.main-section form ul {
+  margin-top: 20px;
+}
+.main-section form ul li {
+  margin-top: 10px;
 }
 
-
-.main-image-container{
-    height: 50%;
-}
-.main-image-container img{
-    width: 100%;
-    height: 100%
+.main-container > * {
+  padding-top: 10px;
 }
 
-/* Footer */
+.main-image-container {
+  height: 50%;
+}
+.main-image-container img {
+  width: 100%;
+  height: 100%;
+}
 
-footer{
-    width: 100%;
-    /* background: url(../image/background/background_footer_editedWithGradient.png); */
+/* Call to Action */
+.call-to-action-columns p,
+.call-to-action-columns form input::placeholder,
+.call-to-action-columns form textarea::placeholder {
+  /* https://www.w3schools.com/cssref/sel_placeholder.php*/
+  color: white;
+}
+.call-to-action-columns form input::placeholder,
+.call-to-action-columns form textarea::placeholder {
+  padding: 10px;
+}
+.call-to-action-columns form input {
+  padding: 10px 5px;
+  margin: 10px 0px;
+}
+.call-to-action-columns form input,
+.call-to-action-columns form textarea {
+  background: transparent;
+  border: 2px solid white;
+  border-radius: 10px;
+  width: 100%;
+}
+.call-to-action-right-column form button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  border: 1px solid white;
+  border-radius: 20px;
+}
+.call-to-action-heading {
+  font-size: 3rem;
+}
+.call-to-action-description {
+  font-size: 1.2rem;
+  color: #c25555;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.call-to-action-left-column ul li {
+  padding: 10px 0;
+  margin: 5px 0;
+}
+
+footer {
+  background-color: black;
+  padding: 30px;
+  text-align: center;
+}
+
+footer p {
+  color: white;
+}
+
+.customer-review-heading {
+  font-weight: 800;
+}
+.customer-review-heading.main {
+  font-size: 1.8rem;
+}
+.customer-review-left-column > * {
+  margin-bottom: 10px;
+}
+
+.customer-review-left-column {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.call-to-action-right-column form * {
+  color: white;
+}
+
+.about-us-container {
+  background-image: url(../image/about-us-gradient.png);
+  color: white;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding: 30px;
+}
+
+.about-us-container * {
+  color: inherit;
+}
+.about-us-container h2 {
+  margin: 20px 0px;
+}
+
+/* .customer-review-container,
+.product-showcase-container {
+  background-color: #f8f3ed;
+} */
+.product-showcase-container > h1 {
+  text-align: center;
+  font-size: 5rem;
+}
+.product {
+  width: 60%;
+}
+.product img {
+  width: 100%;
+}
+
+.products-container {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 40px;
+  padding-bottom: 40px;
+}
+
+.product-container-button {
+  display: grid;
+  justify-items: center;
+}
+
+.product-container-button button {
+  padding: 10px 20px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  background-color: #f8f3ed;
 }
