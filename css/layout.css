@@ -1,11 +1,21 @@
 html {
   min-width: 800px;
   max-width: 1300px;
-  /* width: 80%; */
+  width: 90%;
   margin: 0 auto;
   background-color: #f8f3ed;
 }
 
+.container,
+header,
+footer {
+  margin: 20px 0px;
+}
+
+.container,
+header {
+  background-color: #f9e6d0;
+}
 /* Header Layout */
 
 header > div {

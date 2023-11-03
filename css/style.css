@@ -1,14 +1,5 @@
 /* Ahmed Hanif; Creation Date: 22/10/2023 */
 
-header,
-.customer-review-container,
-.product-showcase-container {
-  background-color: #ead3b7;
-}
-
-header {
-}
-
 header div {
   padding: 10px;
 }
@@ -203,10 +194,6 @@ footer p {
   margin: 20px 0px;
 }
 
-/* .customer-review-container,
-.product-showcase-container {
-  background-color: #f8f3ed;
-} */
 .product-showcase-container > h1 {
   text-align: center;
   font-size: 5rem;
