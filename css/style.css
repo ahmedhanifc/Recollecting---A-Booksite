@@ -4,7 +4,7 @@ header div {
   padding: 10px;
 }
 
-header div > p {
+.logo {
   font-family: "Roboto", sans-serif;
   font-size: 1.4rem;
 }
@@ -181,7 +181,8 @@ footer p {
   justify-items: center;
 }
 
-.product-container-button button {
+.product-container-button button,
+button {
   padding: 10px 20px;
   margin-bottom: 30px;
   border-radius: 5px;

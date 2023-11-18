@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/fonts.css" />
+    <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/subscribe.css" />
+    <link rel="stylesheet" href="../css/contactus.css" />
+  </head>
+  <body>
+    <header>
+      <div>
+        <p class="logo"><span>Book </span>Recollection</p>
+        <form action="">
+          <label for="search"></label>
+
+          <!-- Unicode Source: https://stackoverflow.com/questions/12036038/is-there-unicode-glyph-symbol-to-represent-search -->
+          <input
+            type="search"
+            id="search"
+            name="search"
+            placeholder=" &#x1F50E;&#xFE0E; &nbsp; &nbsp; Search for Books... "
+          />
+          <!-- ----------------------------------------------------------------------------------------------------------------->
+        </form>
+        <div class="header-icons">
+          <ul>
+            <li>
+              <a href=""><img src="../image/svg/heart.svg" alt="" /></a>
+            </li>
+            <li>
+              <a href=""><img src="../image/svg/shopping_cart.svg" alt="" /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <nav class="horizontal-navigation">
+        <ul>
+          <li><a href="../html/index.html">Home</a></li>
+          <li><a href="../html/products.html">Products</a></li>
+          <li><a href="../html/contactus.html">Contact Us</a></li>
+          <li><a href="../html/subscribe.html">Subscribe</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="call-to-action-container container">
+      <div class="call-to-action-columns">
+        <div class="call-to-action-left-column">
+          <p class="call-to-action-heading">
+            Do you have an Enquiry or a Book Recommendation?
+          </p>
+          <p class="call-to-action-description">
+            We Would Love to Hear from you
+          </p>
+          <ul>
+            <li class="map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3605.3177822351945!2d51.476955126953136!3d25.360664000000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e45dcfb2722e9e9%3A0xd1b07d34e11ee6d5!2sUniversity%20of%20Doha%20for%20Science%20and%20Technology%20-%20UDST!5e0!3m2!1sen!2sqa!4v1700201667576!5m2!1sen!2sqa"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </li>
+            <li>
+              <a href="">
+                <img src="../image/svg/email-outline.svg" alt="Email Icon" />
+                <p>bookRecollection@udst.edu.qa</p>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img src="" alt="Phone Icon" />
+                <p>+974 219874 843038</p>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img src="" alt="Location Icon" />
+                <p>Box Model 2213 St</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="call-to-action-right-column">
+          <form action="" method="post">
+            <fieldset>
+              <ul>
+                <li>
+                  <label for="user_name"></label>
+                  <input
+                    type="text"
+                    name="user_name"
+                    id="user_name"
+                    placeholder="Your Name"
+                  />
+                </li>
+                <li>
+                  <label for="user_email"></label>
+                  <input
+                    type="email"
+                    name="user_email"
+                    id="user_email"
+                    placeholder="Your Email"
+                  />
+                </li>
+                <li>
+                  <label for="user_username"></label>
+                  <input
+                    type="text"
+                    name="user_username"
+                    id="user_username"
+                    placeholder="Your Username"
+                  />
+                </li>
+                <li>
+                  <label for="user_number"></label>
+                  <input
+                    type="tel"
+                    name="user_number"
+                    id="user_number"
+                    placeholder="Your Number"
+                  />
+                </li>
+                <li>
+                  <label for="user_message"></label>
+                  <textarea
+                    name="user_message"
+                    id="user_message"
+                    rows="10"
+                    placeholder="Your Message"
+                  ></textarea>
+                </li>
+                <li>
+                  <p>Your Preferred Mode of Communication</p>
+                  <label for="communication">Mobile</label>
+                  <input type="radio" name="communication" id="mobile" />
+                </li>
+              </ul>
+              <button
+                style="background-color: black; padding: 10px 40px"
+                type="button"
+              >
+                Send
+              </button>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p>Copyright &#169; 2023 - Book Recollection - Ahmed Hanif - 60301085</p>
+    </footer>
+  </body>
+</html>
