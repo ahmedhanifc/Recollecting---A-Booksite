@@ -48,113 +48,116 @@
       </nav>
     </header>
     <div class="subscribe-container container">
-      <div>
+
         <form action="https://sit.udst.edu.qa/processform.php" method="post">
-          <fieldset>
-            <legend>User Information</legend>
-            <ul>
-              <li>
-                <label for="user_name" id="user_name_label">Your Name</label>
-                <input type="text" id="user_name" name="user_name" />
-              </li>
-              <li>
-                <label for="user_username" id="user_username_label"
-                  >Username</label
-                >
-                <input type="text" id="user_username" name="user_username" />
-              </li>
-              <li>
-                <label for="user_password" id="user_password_label"
-                  >Password</label
-                >
-                <input
-                  type="password"
-                  id="user_password"
-                  name="user_password"
-                />
-              </li>
-              <li>
-                <label
-                  for="user_password_confirmation"
-                  id="user_password_confirmation_label"
-                  >Confirm Password</label
-                >
-                <input
-                  type="password"
-                  id="user_password_confirmation"
-                  name="user_password"
-                />
-              </li>
-              <li>
-                <label for="user_email" id="user_email_label">Email</label>
-                <input type="email" id="user_email" name="user_email" />
-              </li>
-              <li>
-                <label
-                  for="user_email_confirmation"
-                  id="user_email_confirmation_label"
-                  >Confirm Email</label
-                >
-                <input
-                  type="email"
-                  id="user_email_confirmation"
-                  name="user_email_confirmation"
-                />
-              </li>
-              <li>
-                <label for="user_phone" id="user_phone_label"
-                  >Phone Number</label
-                >
-                <input
-                  type="tel"
-                  name="user_phone"
-                  id="user_phone"
-                  value="+974 "
-                />
-              </li>
-              <li>
-                <label for="user_birth" id="user_birth_label"
-                  >Date of Birth</label
-                >
-                <input type="date" id="user_birth" />
-              </li>
-              <li>
-                <label for="user_age" id="user_age_label">Age</label>
-                <input type="text" id="user_age" />
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset>
-            <legend>Shipping Information</legend>
-            <ul>
-              <li>
-                <label for="building_number" id="building_number_label"
-                  >Building Number</label
-                >
-                <input
-                  type="text"
-                  id="building_number"
-                  name="building_number"
-                />
-              </li>
-              <li>
-                <label for="street_name" id="street_name_label"
-                  >Street Name</label
-                >
-                <input type="text" id="street_name" name="street_name" />
-              </li>
-              <li>
-                <label for="city">Choose Your City</label>
-                <select name="city" id="city">
-                  <option value="doha" selected>Doha</option>
-                  <option value="alRayyan">Al Rayyan</option>
-                  <option value="alWakrah">Al Wakra</option>
-                  <option value="ummSaid">Umm Said</option>
-                  <option value="alKhor">Al Khor</option>
-                </select>
-              </li>
-            </ul>
-          </fieldset>
+          <div class="fieldset-container">
+            <fieldset>
+              <legend>User Information</legend>
+              <ul>
+                <li>
+                  <label for="user_name" id="user_name_label">Your Name</label>
+                  <input type="text" id="user_name" name="user_name" />
+                </li>
+                <li>
+                  <label for="user_username" id="user_username_label"
+                    >Username</label
+                  >
+                  <input type="text" id="user_username" name="user_username" />
+                </li>
+                <li>
+                  <label for="user_password" id="user_password_label"
+                    >Password</label
+                  >
+                  <input
+                    type="password"
+                    id="user_password"
+                    name="user_password"
+                  />
+                </li>
+                <li>
+                  <label
+                    for="user_password_confirmation"
+                    id="user_password_confirmation_label"
+                    >Confirm Password</label
+                  >
+                  <input
+                    type="password"
+                    id="user_password_confirmation"
+                    name="user_password"
+                  />
+                </li>
+                <li>
+                  <label for="user_email" id="user_email_label">Email</label>
+                  <input type="email" id="user_email" name="user_email" />
+                </li>
+                <li>
+                  <label
+                    for="user_email_confirmation"
+                    id="user_email_confirmation_label"
+                    >Confirm Email</label
+                  >
+                  <input
+                    type="email"
+                    id="user_email_confirmation"
+                    name="user_email_confirmation"
+                  />
+                </li>
+                <li>
+                  <label for="user_phone" id="user_phone_label"
+                    >Phone Number</label
+                  >
+                  <input
+                    type="tel"
+                    name="user_phone"
+                    id="user_phone"
+                    value="+974 "
+                  />
+                </li>
+                <li>
+                  <label for="user_birth" id="user_birth_label"
+                    >Date of Birth</label
+                  >
+                  <input type="date" id="user_birth" />
+                </li>
+                <li>
+                  <label for="user_age" id="user_age_label">Age</label>
+                  <input type="text" id="user_age" />
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset>
+              <legend>Shipping Information</legend>
+              <ul>
+                <li>
+                  <label for="building_number" id="building_number_label"
+                    >Building Number</label
+                  >
+                  <input
+                    type="text"
+                    id="building_number"
+                    name="building_number"
+                  />
+                </li>
+                <li>
+                  <label for="street_name" id="street_name_label"
+                    >Street Name</label
+                  >
+                  <input type="text" id="street_name" name="street_name" />
+                </li>
+                <li>
+                  <label for="city">Choose Your City</label>
+                  <select name="city" id="city">
+                    <option value="doha" selected>Doha</option>
+                    <option value="alRayyan">Al Rayyan</option>
+                    <option value="alWakrah">Al Wakra</option>
+                    <option value="ummSaid">Umm Said</option>
+                    <option value="alKhor">Al Khor</option>
+                  </select>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+
           <div class="subscribe-radio">
             <p>
               Would You like to subscibe?
@@ -164,9 +167,12 @@
               <input type="radio" name="subscribe" id="subscribe_no" />
             </p>
           </div>
-          <button type="submit">Submit</button>
+          <div class="subscribe-buttons">
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+          </div>
+
         </form>
-      </div>
     </div>
     <div class="links-container">
       <div class="links-resources">

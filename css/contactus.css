@@ -1,0 +1,14 @@
+#communication-mode-telephone,
+#communication-mode-email {
+  width: auto;
+  padding: 0;
+  margin: 10px 0;
+}
+.communication-mode-container {
+  margin: 15px 0;
+}
+
+.contact-us-button {
+  background-color: black;
+  padding: 10px 40px;
+}

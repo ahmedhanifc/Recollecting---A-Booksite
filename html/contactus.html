@@ -89,7 +89,7 @@
           </ul>
         </div>
         <div class="call-to-action-right-column">
-          <form action="" method="post">
+          <form action="https://sit.udst.edu.qa/processform.php" method="post">
             <fieldset>
               <ul>
                 <li>
@@ -137,18 +137,21 @@
                     placeholder="Your Message"
                   ></textarea>
                 </li>
-                <li>
+                <li class = "communication-mode-container">
                   <p>Your Preferred Mode of Communication</p>
-                  <label for="communication">Mobile</label>
-                  <input type="radio" name="communication" id="mobile" />
+                  <label for="communication-mode">Telephone</label>
+                  <input type="radio" name="communication-mode" id="communication-mode-telephone" value = "telephone">
+                  <label for="communication-mode">Email</label>
+                  <input type="radio" name="communication-mode" id="communication-mode-email" value="Email">
                 </li>
               </ul>
-              <button
-                style="background-color: black; padding: 10px 40px"
-                type="button"
+              <button class = "contact-us-button"
+
+                type="submit"
               >
                 Send
               </button>
+              <button  class = "contact-us-button"type="reset">Reset</button>
             </fieldset>
           </form>
         </div>
