@@ -14,7 +14,7 @@ footer {
 
 .container,
 header {
-  background-color: #f9e6d0;
+  background-color: #ced4da;
 }
 /* Header Layout */
 
@@ -118,4 +118,23 @@ main {
 .products-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+}
+
+.links-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 2fr;
+  background-image: url(../image/header_gradient.png);
+  background-size: 100%;
+  background-repeat: repeat;
+  padding: 50px;
+  color: white;
+  justify-items: center;
+}
+
+.links-container * {
+  color: inherit;
+}
+
+.links-container > div * {
+  line-height: 40px;
 }
