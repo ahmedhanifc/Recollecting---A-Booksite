@@ -43,15 +43,20 @@ const isPasswordValid = function () {
     isSpecialCharacterPresent: false,
     arePasswordsEqual: false,
   };
-  textField_password.forEach((password) => {
-    if (checkPasswordLength(password.value)) {
-      passwordValidityStatus["isLengthValid"] = true;
-    }
-    if (checkPasswordForLetter(password.value)) {
-      passwordValidityStatus["isLetterPresent"] = true;
-    }
-  });
-  console.log(passwordValidityStatus);
+
+  if (textField_password[0].value == textField_password[1].value) {
+    textField_password.forEach((password) => {
+      if (checkPasswordLength(password.value)) {
+        passwordValidityStatus["isLengthValid"] = true;
+      }
+      if (checkPasswordForLetter(password.value)) {
+        passwordValidityStatus["isLetterPresent"] = true;
+      }
+    });
+  } else {
+    return false;
+  }
+  return passwordValidityStatus;
 };
 
 // I want to loop over each and every field, and if it detects that the field is empty,
