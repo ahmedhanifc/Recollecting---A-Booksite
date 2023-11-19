@@ -23,9 +23,9 @@ const isNameValid = function () {
   return nameIsValid;
 };
 
-const isFieldNotEmpty = function (givenField) {
+const isFieldNotEmpty = function () {
   let fieldNotEmpty;
-  givenField.forEach((field) => {
+  textFields.forEach((field) => {
     if (!field.value) {
       fieldNotEmpty = false;
     } else {
@@ -36,10 +36,22 @@ const isFieldNotEmpty = function (givenField) {
   return fieldNotEmpty;
 };
 
-const areFieldsValid = function () {};
-
 const isPasswordValid = function () {
-  isFieldNotEmpty(textField_password);
+  let passwordValidityStatus = {
+    isLengthValid: false,
+    isLetterPresent: false,
+    isSpecialCharacterPresent: false,
+    arePasswordsEqual: false,
+  };
+  textField_password.forEach((password) => {
+    if (checkPasswordLength(password.value)) {
+      passwordValidityStatus["isLengthValid"] = true;
+    }
+    if (checkPasswordForLetter(password.value)) {
+      passwordValidityStatus["isLetterPresent"] = true;
+    }
+  });
+  console.log(passwordValidityStatus);
 };
 
 // I want to loop over each and every field, and if it detects that the field is empty,
@@ -49,3 +61,5 @@ const isPasswordValid = function () {
 subscribeButton.addEventListener("click", isFieldNotEmpty);
 subscribeButton.addEventListener("click", isNameValid);
 subscribeButton.addEventListener("click", isPasswordValid);
+
+subscribeButton.addEventListener("click", () => console.log(isPasswordValid()));
