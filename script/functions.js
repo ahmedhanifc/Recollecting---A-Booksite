@@ -91,3 +91,11 @@ const checkForRange = function (givenValue, minValue, maxValue) {
     return true;
   }
 };
+
+const doYearsMatch = function (birthYear, dateOfBirth) {
+  if (birthYear === dateOfBirth) {
+    return true;
+  } else {
+    return false;
+  }
+};

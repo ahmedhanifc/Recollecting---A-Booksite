@@ -9,6 +9,7 @@ let isFormValid = {
   isPhoneValid: false,
   isAddressValid: false,
   isAgeValid: false,
+  isCalendarValid: false,
 };
 
 subscribeButton.addEventListener("click", () => console.log(isFormValid));
