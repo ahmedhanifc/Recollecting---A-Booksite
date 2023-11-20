@@ -27,6 +27,8 @@ const emailValidation = function () {
   }
   if (truth_counter == 3) {
     isFormValid["isEmailValid"] = true;
+  } else {
+    isFormValid["isEmailValid"] = false;
   }
 };
 

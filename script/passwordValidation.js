@@ -9,6 +9,7 @@ const passwordValidation = function () {
     ),
     isLengthValid: false,
     isLetterPresent: false,
+    isNumberPresent: false,
     isSpecialCharacterPresent: false,
   };
 
@@ -23,6 +24,9 @@ const passwordValidation = function () {
       );
       passwordValidityStatus["isSpecialCharacterPresent"] =
         checkForSpecialCharacter(password.value);
+      passwordValidityStatus["isNumberPresent"] = checkForNumber(
+        password.value
+      );
     });
   }
 
@@ -31,8 +35,10 @@ const passwordValidation = function () {
       truth_counter++;
     }
   }
-  if (truth_counter == 4) {
+  if (truth_counter == 5) {
     isFormValid["isPasswordValid"] = true;
+  } else {
+    isFormValid["isPasswordValid"] = false;
   }
 };
 

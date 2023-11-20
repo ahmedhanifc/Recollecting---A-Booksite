@@ -6,6 +6,19 @@ const checkStringEquality = function (firstString, secondString) {
   }
 };
 
+const checkPhoneFormat = function (givenString) {
+  if (givenString.slice(0, 4) !== "+974") {
+    return false;
+  }
+  let stringPostFix = givenString.slice(4);
+
+  if (stringPostFix.length === 8) {
+    return true;
+  } else {
+    return false;
+  }
+};
+
 const checkStringLength = function (givenString, requiredLength) {
   if (givenString.length >= requiredLength) {
     return true;
@@ -15,15 +28,27 @@ const checkStringLength = function (givenString, requiredLength) {
 };
 
 const checkForLetter = function (givenString) {
+  // The function takes a string as an input and checks whether it contains a letter {a,b,c,...}, Returns true if it does, false otherwise
   for (let i = 0; i < givenString.length; i++) {
     if (isNaN(givenString[i])) {
       return true;
-    } else {
-      return false;
     }
   }
+  return false;
 };
+
+const checkForNumber = function (givenString) {
+  // The function takes a string as an input and checks whether it contains a number {1,2,3}, Returns true if it does, false otherwise
+  for (let i = 0; i < givenString.length; i++) {
+    if (!isNaN(givenString[i])) {
+      return true;
+    }
+  }
+  return false;
+};
+
 const checkForSpecialCharacter = function (givenString) {
+  // The function takes a string as a parameter and checks whether it contains a special character
   if (specialCharacters.test(givenString)) {
     return true;
   } else {
