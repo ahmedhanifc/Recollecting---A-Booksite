@@ -54,6 +54,7 @@
             <fieldset>
               <legend>User Information</legend>
               <ul>
+                <span class = "error-message name-error-message"></span>
                 <li>
                   <label for="user_name" id="user_name_label">Your Name</label>
                   <input type="text" id="user_name" name="user_name" class ="text_fields name"/>
@@ -63,7 +64,11 @@
                     >Username</label
                   >
                   <input type="text" id="user_username" name="user_username" class = "text_fields name" />
+                  <span class = "error-message username-error-message"></span>
+
                 </li>
+                <span class = "error-message password-error-message"></span>
+
                 <li>
                   <label for="user_password" id="user_password_label"
                     >Password</label
@@ -74,6 +79,7 @@
                     name="user_password"
                     class = "text_fields password"
                   />
+                  <span class = "error-message password-error-message"></span>
                 </li>
                 <li>
                   <label
@@ -235,13 +241,15 @@
     <!-- <script src="../script/script.js"></script> -->
     <!-- <script src="../script/password.js"></script> -->
     <script src="../script/script.js"></script>
+    <script src="../script/nameValidation.js"></script>
     <script src="../script/passwordValidation.js"></script>
     <script src="../script/emailValidation.js"></script>
     <script src="../script/phoneValidation.js"></script>
     <script src="../script/ageValidation.js"></script>
     <script src="../script/dateOfBirthValidation.js"></script>
     <script src="../script/addressValidation.js"></script>
-    <script src="../script/functions.js"></script>
+    <script src="../script/radioButtonValidation.js"></script>
     <script src="../script/errorMessage.js"></script>
+    <script src="../script/functions.js"></script>
   </body>
 </html>

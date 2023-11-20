@@ -4,12 +4,14 @@ const textFields = document.querySelectorAll(".text_fields");
 const specialCharacters = /[`!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/; //https://bobbyhadz.com/blog/javascript-check-if-string-contains-special-characters
 
 let isFormValid = {
+  isNameValid: false,
   isPasswordValid: false,
   isEmailValid: false,
   isPhoneValid: false,
   isAddressValid: false,
   isAgeValid: false,
   isCalendarValid: false,
+  isRadioButtonsValid: false,
 };
 
-subscribeButton.addEventListener("click", () => console.log(isFormValid));
+// subscribeButton.addEventListener("click", () => console.log(isFormValid));

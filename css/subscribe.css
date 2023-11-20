@@ -71,3 +71,9 @@ fieldset {
   display: grid;
   justify-items: center;
 }
+
+.error-message {
+  color: red;
+  font-size: 1rem;
+  font-size: 1rem;
+}
