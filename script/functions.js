@@ -92,3 +92,11 @@ const checkForStringEmptiness = function (givenString) {
     return true;
   }
 };
+
+const checkForRange = function (givenValue, minValue, maxValue) {
+  if (givenValue < minValue || givenValue > maxValue) {
+    return false;
+  } else {
+    return true;
+  }
+};
