@@ -7,4 +7,5 @@ let isFormValid = {
   isEmailValid: false,
   isPhoneValid: false,
   isTextFieldValid: false,
+  isRadioButtonsValid: false,
 };

@@ -43,7 +43,7 @@ const errorMessageValidation = function () {
       truth_counter += 1;
     }
   }
-  if (truth_counter == 4) {
+  if (truth_counter == 5) {
     subscribeButton["type"] = "submit";
   }
 };
