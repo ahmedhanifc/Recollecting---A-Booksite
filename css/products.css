@@ -36,3 +36,7 @@ main {
 .main-left-column {
   margin: 20px;
 }
+
+.products {
+  font-size: 1.2rem;
+}
