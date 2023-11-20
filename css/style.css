@@ -25,10 +25,10 @@ header form input[placeholder] {
 
 /* Showcase Container */
 .showcase-container-heading {
-  font-size: 3.5rem;
+  font-size: 4.5rem;
 }
 .showcase-container-description {
-  font-size: 0.8rem;
+  font-size: 1.4rem;
 }
 
 .showcase-container-right-column {
@@ -95,13 +95,37 @@ footer p {
   width: 70%;
   margin: 0 auto;
 }
+.customer-review-information p {
+  font-weight: 600;
+  padding-top: 10px;
+  font-size: 1.3rem;
+}
+.customer-review-container {
+  font-size: 1.3rem;
+  padding: 20px;
+}
+.customer-review-right-column {
+  margin: 0 20px;
+}
 
 .about-us-container {
   background-image: url(../image/about-us-gradient.png);
+  background-position: 80%;
   color: white;
   display: grid;
   grid-template-columns: 2fr 1fr;
-  padding: 30px;
+  padding: 50px;
+}
+
+.about-us-left-column {
+  padding: 20px;
+}
+
+.about-us-description {
+  line-height: 30px;
+  font-weight: 400;
+  word-spacing: 5px;
+  font-size: 1.4rem;
 }
 
 .about-us-container * {
@@ -114,6 +138,7 @@ footer p {
 .product-showcase-container > h1 {
   text-align: center;
   font-size: 5rem;
+  padding: 80px 20px 0 0;
 }
 .product {
   width: 60%;
@@ -125,8 +150,9 @@ footer p {
 .products-container {
   width: 90%;
   margin: 0 auto;
-  margin-top: 40px;
+  margin-top: 60px;
   padding-bottom: 40px;
+  justify-items: center;
 }
 
 .product-container-button {
