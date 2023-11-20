@@ -53,15 +53,19 @@
           <div class="fieldset-container">
             <fieldset>
               <legend>User Information</legend>
+              <p>Fields marked with <strong>*</strong> are required</p>
+
               <ul>
                 <span class = "error-message name-error-message"></span>
                 <li>
-                  <label for="user_name" id="user_name_label">Your Name</label>
+                  <label for="user_name" id="user_name_label" aria-label="required">
+                    <span>Your Name <strong>*</strong></span>
+                  </label>
                   <input type="text" id="user_name" name="user_name" class ="text_fields name"/>
                 </li>
                 <li>
                   <label for="user_username" id="user_username_label"
-                    >Username</label
+                    ><span>Username <strong>*</strong></span></label
                   >
                   <input type="text" id="user_username" name="user_username" class = "text_fields name" />
                   <span class = "error-message username-error-message"></span>
@@ -70,7 +74,7 @@
                 <span class = "error-message password-error-message"></span>
                 <li>
                   <label for="user_password" id="user_password_label"
-                    >Password</label
+                    >Password *</label
                   >
                   <input
                     type="password"
@@ -85,7 +89,7 @@
                   <label
                     for="user_password_confirmation"
                     id="user_password_confirmation_label"
-                    >Confirm Password</label
+                    >Confirm Password *</label
                   >
                   <input
                     type="password"
@@ -97,7 +101,7 @@
                 <span class = "error-message email-error-message"></span>
 
                 <li>
-                  <label for="user_email" id="user_email_label">Email</label>
+                  <label for="user_email" id="user_email_label">Email *</label>
                   <input type="email" id="user_email" name="user_email"  class = "text_fields email email_confirmation" />
                 </li>
                 <span class = "error-message email-confirmation-error-message"></span>
@@ -106,7 +110,7 @@
                   <label
                     for="user_email_confirmation"
                     id="user_email_confirmation_label"
-                    >Confirm Email</label
+                    >Confirm Email *</label
                   >
                   <input
                     type="email"
@@ -118,7 +122,7 @@
                 <span class = "error-message phone-error-message"></span>
                 <li>
                   <label for="user_phone" id="user_phone_label"
-                    >Phone Number</label
+                    >Phone Number *</label
                   >
                   <!-- Do something about the input below -->
                   <input
@@ -128,28 +132,32 @@
                     value="+974 "
                   />
                 </li>
-                <span class = "error-message age-error-message"></span>
+                <span class = "error-message calendar-error-message"></span>
 
                 <li>
                   <label for="user_birth" id="user_birth_label"
-                    >Date of Birth</label
+                    >Date of Birth *</label
                   >
                   <input type="date" id="user_birth" />
                 </li>
+                <span class = "error-message age-error-message"></span>
+
                 <li>
-                  <label for="user_age" id="user_age_label">Age</label>
+                  <label for="user_age" id="user_age_label">Age *</label>
                   <input type="text" id="user_age" class ="text_fields"/>
                 </li>
               </ul>
             </fieldset>
             <fieldset>
               <legend>Shipping Information</legend>
+              <p>Fields marked with <strong>*</strong> are required</p>
+
               <ul>
                 <span class = "error-message address-error-message"></span>
 
                 <li>
                   <label for="building_number" id="building_number_label"
-                    >Building Number</label
+                    >Building Number *</label
                   >
                   <input
                     type="text"
@@ -160,12 +168,12 @@
                 </li>
                 <li>
                   <label for="street_name" id="street_name_label"
-                    >Street Name</label
+                    >Street Name *</label
                   >
                   <input type="text" id="street_name" name="street_name" class ="text_fields"/>
                 </li>
                 <li>
-                  <label for="city">Choose Your City</label>
+                  <label for="city">Choose Your City *</label>
                   <select name="city" id="city">
                     <option value="doha" selected>Doha</option>
                     <option value="alRayyan">Al Rayyan</option>

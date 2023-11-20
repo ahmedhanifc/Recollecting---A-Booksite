@@ -11,6 +11,9 @@ const email_confirmation_error_message = document.querySelector(
 );
 const phone_error_message = document.querySelector(".phone-error-message");
 const age_error_message = document.querySelector(".age-error-message");
+const calendar_error_message = document.querySelector(
+  ".calendar-error-message"
+);
 const address_error_message = document.querySelector(".address-error-message");
 
 const createErrorMessage = function (entryThatIsInvalid) {
@@ -35,8 +38,10 @@ const createErrorMessage = function (entryThatIsInvalid) {
       "The Phone must contain digits only conforming to the Qatari phone number format";
   }
   if (entryThatIsInvalid == "isAgeValid") {
-    age_error_message.innerText =
-      "Age must be between 18 and 100. Date of Birth must conform to given age";
+    age_error_message.innerText = "Age must be between 18 and 100";
+  }
+  if (entryThatIsInvalid == "isCalendarValid") {
+    calendar_error_message.innerText = "Age must match with field";
   }
   if (entryThatIsInvalid == "isAddressValid") {
     address_error_message.innerText =
@@ -62,19 +67,27 @@ const removeErrorMessage = function (entryThatIsValid) {
   if (entryThatIsValid == "isAgeValid") {
     age_error_message.innerText = "";
   }
+  if (entryThatIsValid == "isCalendarValid") {
+    calendar_error_message.innerText = "";
+  }
   if (entryThatIsValid == "isAddressValid") {
     address_error_message.innerText = "";
   }
 };
 
 const errorMessageValidation = function () {
+  let truth_counter = 0;
   for (const [key, value] of Object.entries(isFormValid)) {
     if (value == false) {
       createErrorMessage(key);
     }
     if (value == true) {
       removeErrorMessage(key);
+      truth_counter += 1;
     }
+  }
+  if (truth_counter == 7) {
+    subscribeButton["type"] = "submit";
   }
 };
 
