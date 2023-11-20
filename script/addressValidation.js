@@ -27,9 +27,9 @@ const addressValidation = function () {
     }
   }
   if (truth_counter == 3) {
-    isFormValid["isPasswordValid"] = true;
+    isFormValid["isAddressValid"] = true;
   } else {
-    isFormValid["isPasswordValid"] = false;
+    isFormValid["isAddressValid"] = false;
   }
 };
 
