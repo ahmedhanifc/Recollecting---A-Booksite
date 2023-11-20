@@ -76,3 +76,11 @@ const checkForCharactersAfterAsteric = function (givenString) {
     return true;
   }
 };
+
+const checkForStringEmptiness = function (givenString) {
+  if (givenString.length == 0) {
+    return false;
+  } else {
+    return true;
+  }
+};
