@@ -29,4 +29,13 @@ if (!/^[a-zA-Z]\*$/.test(field.value)) {
 nameIsValid = false;
 }
 
+(2)
+const checkForLetter = function (givenString) {
+// The function takes a string as an input and checks whether it contains a letter {a,b,c,...}. Returns true if it does, false otherwise.
+const regex = /[a-zA-Z]/; // Regular expression to match any letter (case-insensitive)
+
+return regex.test(givenString);
+};
+This version uses a regular expression (/[a-zA-Z]/) to check if the string contains any letter, and it is case-insensitive. This approach provides a more accurate check for the presence of letters in the string.
+
 <!-- ------------------------------------------------------------------------------------------- -->

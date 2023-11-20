@@ -11,7 +11,7 @@ const addressValidation = function () {
   addressValidityStatus["isAddressNonEmpty"] = checkForStringEmptiness(
     textField_building_number.value
   );
-  addressValidityStatus["letterIsNotPresent"] = checkForLetter(
+  addressValidityStatus["letterIsNotPresent"] = !checkForLetter(
     textField_building_number.value
   );
 

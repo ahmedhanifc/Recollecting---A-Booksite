@@ -27,14 +27,22 @@ const checkStringLength = function (givenString, requiredLength) {
   }
 };
 
+// const checkForLetter = function (givenString) {
+//   // The function takes a string as an input and checks whether it contains a letter {a,b,c,...}, Returns true if it does, false otherwise
+//   for (let i = 0; i < givenString.length; i++) {
+//     if (isNaN(givenString[i])) {
+//       return true;
+//     }
+//   }
+//   return false;
+// };
+
+// (2)
 const checkForLetter = function (givenString) {
-  // The function takes a string as an input and checks whether it contains a letter {a,b,c,...}, Returns true if it does, false otherwise
-  for (let i = 0; i < givenString.length; i++) {
-    if (isNaN(givenString[i])) {
-      return true;
-    }
-  }
-  return false;
+  // The function takes a string as an input and checks whether it contains a letter {a,b,c,...}. Returns true if it does, false otherwise.
+  const regex = /[a-zA-Z]/; // Regular expression to match any letter (case-insensitive)
+
+  return regex.test(givenString);
 };
 
 const checkForNumber = function (givenString) {
