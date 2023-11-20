@@ -71,49 +71,6 @@ fieldset {
   border: 0px;
 }
 
-/* Call to Action */
-.call-to-action-columns p,
-.call-to-action-columns form input::placeholder,
-.call-to-action-columns form textarea::placeholder {
-  /* https://www.w3schools.com/cssref/sel_placeholder.php*/
-  color: white;
-}
-.call-to-action-columns form input::placeholder,
-.call-to-action-columns form textarea::placeholder {
-  padding: 10px;
-}
-.call-to-action-columns form input {
-  padding: 10px 5px;
-  margin: 10px 0px;
-}
-.call-to-action-columns form input,
-.call-to-action-columns form textarea {
-  background: transparent;
-  border: 2px solid white;
-  border-radius: 10px;
-  width: 100%;
-}
-.call-to-action-right-column form button {
-  padding: 10px 20px;
-  margin-top: 10px;
-  border: 1px solid white;
-  border-radius: 20px;
-}
-.call-to-action-heading {
-  font-size: 3rem;
-}
-.call-to-action-description {
-  font-size: 1.2rem;
-  color: #c25555;
-  margin-top: 10px;
-  margin-bottom: 20px;
-}
-
-.call-to-action-left-column ul li {
-  padding: 10px 0;
-  margin: 5px 0;
-}
-
 footer {
   background-color: black;
   padding: 30px;
@@ -137,10 +94,6 @@ footer p {
 .customer-review-left-column {
   width: 70%;
   margin: 0 auto;
-}
-
-.call-to-action-right-column form * {
-  color: white;
 }
 
 .about-us-container {

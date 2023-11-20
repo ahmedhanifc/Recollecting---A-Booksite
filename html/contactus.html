@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../css/fonts.css" />
     <link rel="stylesheet" href="../css/layout.css" />
     <link rel="stylesheet" href="../css/subscribe.css" />
-    <link rel="stylesheet" href="../css/contactus.css" />
+    <link rel="stylesheet" href="../css/contactus.css">
   </head>
   <body>
     <header>
@@ -27,6 +27,7 @@
           />
           <!-- ----------------------------------------------------------------------------------------------------------------->
         </form>
+
         <div class="header-icons">
           <ul>
             <li>
@@ -47,114 +48,78 @@
         </ul>
       </nav>
     </header>
-    <div class="call-to-action-container container">
-      <div class="call-to-action-columns">
-        <div class="call-to-action-left-column">
-          <p class="call-to-action-heading">
-            Do you have an Enquiry or a Book Recommendation?
-          </p>
-          <p class="call-to-action-description">
-            We Would Love to Hear from you
-          </p>
-          <ul>
-            <li class="map">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3605.3177822351945!2d51.476955126953136!3d25.360664000000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e45dcfb2722e9e9%3A0xd1b07d34e11ee6d5!2sUniversity%20of%20Doha%20for%20Science%20and%20Technology%20-%20UDST!5e0!3m2!1sen!2sqa!4v1700201667576!5m2!1sen!2sqa"
-                width="600"
-                height="450"
-                style="border: 0"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-              ></iframe>
-            </li>
-            <li>
-              <a href="">
-                <h3>Email</h3>
-                <p>bookRecollection@udst.edu.qa</p>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <h3>Phone</h3>
-                <p>+974 219874 843038</p>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <h3>Location</h3>
-                <p>Box Model 2213 St</p>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="call-to-action-right-column">
-          <form action="https://sit.udst.edu.qa/processform.php" method="post">
-            <fieldset>
-              <ul>
+    <div class="contact-us-container container">
+      <div class="contact-us-left-column">
+        <h1>Do you have an Enquiry or a Book Recommendation?</h1>
+        <h1>We Would Love to Hear from You.</h1>
+        <ul class="contact-information">
+          <li>Email: bookrecollection@udst.edu.qa</li>
+          <li>Phone: +974 77665544</li>
+          <li>
+            <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3605.3177822351945!2d51.476955126953136!3d25.360664000000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e45dcfb2722e9e9%3A0xd1b07d34e11ee6d5!2sUniversity%20of%20Doha%20for%20Science%20and%20Technology%20-%20UDST!5e0!3m2!1sen!2sqa!4v1700201667576!5m2!1sen!2sqa"
+            width="400"
+            height="250"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+          </li>
+        </ul>
+      </div>
+
+      <div class="contack-us-right-column">
+        <form action="https://sit.udst.edu.qa/processform.php">
+          <fieldset>
+            <legend>User Information</legend>
+            <p>Fields marked with <strong>*</strong> are required</p>
+            <ul>
+              <span class = "error-message name-error-message"></span>
+              <li>
+                <label for="user_name" id="user_name_label" aria-label="required">
+                  <span>Your Name <strong>*</strong></span>
+                </label>
+                <input type="text" id="user_name" name="user_name" class ="text_fields name"/>
+              </li>
+              <li>
+                <label for="user_username" id="user_username_label"
+                  ><span>Username <strong>*</strong></span></label
+                >
+                <input type="text" id="user_username" name="user_username" class = "text_fields name" />
+                <span class = "error-message username-error-message"></span>
+
+              </li>
+              <span class = "error-message email-error-message"></span>
+
                 <li>
-                  <label for="user_name"></label>
-                  <input
-                    type="text"
-                    name="user_name"
-                    id="user_name"
-                    placeholder="Your Name"
-                  />
+                  <label for="user_email" id="user_email_label">Email *</label>
+                  <input type="email" id="user_email" name="user_email"  class = "text_fields email email_confirmation" />
                 </li>
+                <span class = "error-message phone-error-message"></span>
                 <li>
-                  <label for="user_email"></label>
-                  <input
-                    type="email"
-                    name="user_email"
-                    id="user_email"
-                    placeholder="Your Email"
-                  />
-                </li>
-                <li>
-                  <label for="user_username"></label>
-                  <input
-                    type="text"
-                    name="user_username"
-                    id="user_username"
-                    placeholder="Your Username"
-                  />
-                </li>
-                <li>
-                  <label for="user_number"></label>
+                  <label for="user_phone" id="user_phone_label"
+                    >Phone Number *</label
+                  >
+                  <!-- Do something about the input below -->
                   <input
                     type="tel"
-                    name="user_number"
-                    id="user_number"
-                    placeholder="Your Number"
+                    name="user_phone"
+                    id="user_phone"
+                    value="+974 "
                   />
                 </li>
                 <li>
-                  <label for="user_message"></label>
-                  <textarea
-                    name="user_message"
-                    id="user_message"
-                    rows="10"
-                    placeholder="Your Message"
-                  ></textarea>
+                  <label for="user-message" id = "user-message-label">Enter Your Message *</label>
+                  <textarea name="user-message" id="user-message" cols="30" rows="10"></textarea>
                 </li>
-                <li class = "communication-mode-container">
-                  <p>Your Preferred Mode of Communication</p>
-                  <label for="communication-mode">Telephone</label>
-                  <input type="radio" name="communication-mode" id="communication-mode-telephone" value = "telephone">
-                  <label for="communication-mode">Email</label>
-                  <input type="radio" name="communication-mode" id="communication-mode-email" value="Email">
-                </li>
-              </ul>
-              <button class = "contact-us-button"
-
-                type="submit"
-              >
-                Send
-              </button>
-              <button  class = "contact-us-button"type="reset">Reset</button>
-            </fieldset>
-          </form>
-        </div>
+            </ul>
+          </fieldset>
+          <div class="subscribe-buttons">
+            <button class = "subscribe-submit-button "type="button">Submit</button>
+            <button type="reset">Reset</button>
+          </div>
+        </form>
       </div>
     </div>
     <div class="links-container">
@@ -210,7 +175,18 @@
     <footer>
       <p>Copyright &#169; 2023 - Book Recollection - Ahmed Hanif - 60301085</p>
     </footer>
+    <!-- <script src="../script/script.js"></script> -->
+    <!-- <script src="../script/password.js"></script> -->
     <script src="../script/script.js"></script>
-
+    <script src="../script/nameValidation.js"></script>
+    <script src="../script/passwordValidation.js"></script>
+    <script src="../script/emailValidation.js"></script>
+    <script src="../script/phoneValidation.js"></script>
+    <script src="../script/ageValidation.js"></script>
+    <script src="../script/dateOfBirthValidation.js"></script>
+    <script src="../script/addressValidation.js"></script>
+    <script src="../script/radioButtonValidation.js"></script>
+    <script src="../script/errorMessage.js"></script>
+    <script src="../script/functions.js"></script>
   </body>
 </html>

@@ -1,18 +1,38 @@
-#communication-mode-telephone,
-#communication-mode-email {
-  width: auto;
-  padding: 0;
-  margin: 10px 0;
-}
-.communication-mode-container {
-  margin: 15px 0;
+.contact-us-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
-.contact-us-button {
-  background-color: black;
-  padding: 10px 40px;
+.contact-us-container form ul li {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
 }
 
-h3 {
-  color: white;
+.contact-us-container form input {
+  padding: 5px;
+  margin: 10px;
+}
+
+.contact-us-container fieldset {
+  padding: 0 20px;
+  font-size: 1.2rem;
+}
+.contact-us-container p {
+  margin: 10px 0px;
+}
+
+.contact-us-left-column {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.contact-us-left-column h1 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.contact-us-left-column li {
+  margin: 20px 0;
 }

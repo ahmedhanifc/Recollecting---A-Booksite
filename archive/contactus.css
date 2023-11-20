@@ -1,0 +1,78 @@
+#communication-mode-telephone,
+#communication-mode-email {
+  width: auto;
+  padding: 0;
+  margin: 10px 0;
+}
+.communication-mode-container {
+  margin: 15px 0;
+}
+
+.contact-us-button {
+  background-color: black;
+  padding: 10px 40px;
+}
+
+h3 {
+  color: black;
+}
+
+.call-to-action-columns {
+  width: 70%;
+  gap: 20px;
+  margin: 0 auto;
+  padding: 50px 0px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* call to action*/
+/* .call-to-action-container {
+  background: url(../image/background/background_footer_editedWithGradient.png);
+} */
+
+/* Call to Action */
+/* https://www.w3schools.com/cssref/sel_placeholder.php*/
+/* .call-to-action-columns p,
+.call-to-action-columns form input::placeholder,
+.call-to-action-columns form textarea::placeholder {
+  color: white;
+} */
+.call-to-action-columns form input::placeholder,
+.call-to-action-columns form textarea::placeholder {
+  padding: 10px;
+}
+.call-to-action-columns form input {
+  padding: 10px 5px;
+  margin: 10px 0px;
+}
+.call-to-action-columns form input,
+.call-to-action-columns form textarea {
+  background: transparent;
+  /* border: 2px solid white; */
+  border-radius: 10px;
+  width: 100%;
+}
+.call-to-action-right-column form button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+.call-to-action-heading {
+  font-size: 3rem;
+}
+.call-to-action-description {
+  font-size: 1.2rem;
+  color: #c25555;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.call-to-action-left-column ul li {
+  padding: 10px 0;
+  margin: 5px 0;
+}
+.call-to-action-right-column form * {
+  color: black;
+}
