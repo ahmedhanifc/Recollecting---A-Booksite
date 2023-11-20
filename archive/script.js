@@ -68,3 +68,14 @@ subscribeButton.addEventListener("click", isNameValid);
 subscribeButton.addEventListener("click", isPasswordValid);
 
 subscribeButton.addEventListener("click", () => console.log(isPasswordValid()));
+
+//
+// const checkForLetter = function (givenString) {
+//   // The function takes a string as an input and checks whether it contains a letter {a,b,c,...}, Returns true if it does, false otherwise
+//   for (let i = 0; i < givenString.length; i++) {
+//     if (isNaN(givenString[i])) {
+//       return true;
+//     }
+//   }
+//   return false;
+// };

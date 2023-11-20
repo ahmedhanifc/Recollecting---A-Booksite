@@ -27,16 +27,6 @@ const checkStringLength = function (givenString, requiredLength) {
   }
 };
 
-// const checkForLetter = function (givenString) {
-//   // The function takes a string as an input and checks whether it contains a letter {a,b,c,...}, Returns true if it does, false otherwise
-//   for (let i = 0; i < givenString.length; i++) {
-//     if (isNaN(givenString[i])) {
-//       return true;
-//     }
-//   }
-//   return false;
-// };
-
 // (2)
 const checkForLetter = function (givenString) {
   // The function takes a string as an input and checks whether it contains a letter {a,b,c,...}. Returns true if it does, false otherwise.
@@ -86,6 +76,7 @@ const checkForCharactersAfterAsteric = function (givenString) {
 };
 
 const checkForStringEmptiness = function (givenString) {
+  givenString = givenString.trim();
   if (givenString.length == 0) {
     return false;
   } else {
