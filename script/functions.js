@@ -70,7 +70,7 @@ const checkForCharactersAfterAsteric = function (givenString) {
   }
 
   let newString = givenString.slice(astericHasIndex + 1, domainHasIndex);
-  if (newString.length > 2) {
+  if (newString.length >= 2) {
     return true;
   }
 };

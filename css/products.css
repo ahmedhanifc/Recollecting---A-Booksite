@@ -40,3 +40,12 @@ main {
 .products {
   font-size: 1.2rem;
 }
+
+.main-right-column button {
+  padding: 10px 30px;
+  margin: 20px 0;
+}
+
+.main-book-description {
+  font-size: 0.9rem;
+}

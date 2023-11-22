@@ -79,11 +79,11 @@ main {
   gap: 20px;
 }
 
-.main-book-price ul {
+/* .main-book-price ul {
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-items: stretch;
-}
+} */
 
 /* Customer Review */
 
