@@ -86,7 +86,7 @@ const errorMessageValidation = function () {
       truth_counter += 1;
     }
   }
-  if (truth_counter == 7) {
+  if (truth_counter == 8) {
     subscribeButton["type"] = "submit";
   }
 };

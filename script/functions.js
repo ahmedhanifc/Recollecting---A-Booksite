@@ -76,7 +76,6 @@ const checkForCharactersAfterAsteric = function (givenString) {
 };
 
 const checkForStringEmptiness = function (givenString) {
-  console.log(givenString);
   givenString = givenString.trim();
   if (givenString.length == 0) {
     return false;
